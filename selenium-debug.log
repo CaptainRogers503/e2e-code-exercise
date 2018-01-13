@@ -1,0 +1,29 @@
+15:09:55.036 INFO - Selenium build info: version: '3.8.1', revision: '6e95a6684b'
+15:09:55.036 INFO - Launching a standalone Selenium Server
+2018-01-13 15:09:55.220:INFO::main: Logging initialized @711ms to org.seleniumhq.jetty9.util.log.StdErrLog
+15:09:55.305 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+15:09:55.352 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+15:09:55.352 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+15:09:55.352 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:09:55.352 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+15:09:55.352 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+15:09:55.367 INFO - Driver class not found: org.openqa.selenium.phantomjs.PhantomJSDriver
+15:09:55.426 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform WIN10
+15:09:55.582 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+15:09:55.582 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+15:09:55.582 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+15:09:55.582 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+15:09:55.582 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+15:09:55.611 INFO - Using the passthrough mode handler
+2018-01-13 15:09:55.660:INFO:osjs.Server:main: jetty-9.4.7.v20170914
+2018-01-13 15:09:55.725:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@462d5aee{/,null,STARTING} has uncovered http methods for path: /
+2018-01-13 15:09:55.725:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@462d5aee{/,null,AVAILABLE}
+2018-01-13 15:09:55.775:INFO:osjs.AbstractConnector:main: Started ServerConnector@3578436e{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2018-01-13 15:09:55.775:INFO:osjs.Server:main: Started @1275ms
+15:09:55.775 INFO - Selenium Server is up and running
+2018-01-13 15:09:56.148:INFO:osjshC.ROOT:qtp1156060786-17: org.openqa.selenium.remote.server.WebDriverServlet-51cdd8a: Initialising WebDriverServlet
+15:09:56.239 INFO - Found handler: org.openqa.selenium.remote.server.commandhandler.BeginSession@3095ec88
+15:09:56.244 INFO - /session: Executing POST on /session (handler: BeginSession)
+15:09:56.376 INFO - Capabilities are: Capabilities {acceptSslCerts: true, browserName: chrome, chromeOptions: {args: [no-sandbox]}, javascriptEnabled: true, name: Amazon Test}
+15:09:56.395 INFO - Capabilities {acceptSslCerts: true, browserName: chrome, chromeOptions: {args: [no-sandbox]}, javascriptEnabled: true, name: Amazon Test} matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
