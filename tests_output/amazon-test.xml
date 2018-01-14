@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="amazon-test"
+    errors="1" failures="0" hostname="" id="" package="amazon-test" skipped="0"
+    tests="1" time="0.01500" timestamp="Sun, 14 Jan 2018 01:36:22 GMT">
+  
+    <testcase name="Amazon Test" classname="amazon-test" time="0.01500" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Amazon Test / Amazon Test]:
+
+  TypeError: client.url(...).assert.urlEquals(...).waitForElementVisible(...).click(...).setValue(...).click(...).pause(...).assert.url is not a function
+    at Object.Amazon Test (C:\Users\Jon\Desktop\angular-seed\nightwatch-tests\amazon-test.js:11:21)
+    at Module.call (C:\Users\Jon\Desktop\angular-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Jon\Desktop\angular-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:796:13)
+    at C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
