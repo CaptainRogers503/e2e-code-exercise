@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="amazon-test"
-    errors="0" failures="1" hostname="" id="" package="amazon-test" skipped="0"
-    tests="1" time="19.12" timestamp="Sun, 14 Jan 2018 01:35:18 GMT">
+    errors="0" failures="0" hostname="" id="" package="amazon-test" skipped="0"
+    tests="1" time="22.42" timestamp="Mon, 15 Jan 2018 05:20:03 GMT">
   
-    <testcase name="Amazon Test" classname="amazon-test" time="19.12" assertions="3">
+    <testcase name="Amazon Test" classname="amazon-test" time="22.42" assertions="2">
 
     
-
-      <failure message="Testing if the URL equals &#34;https://www.amazon.com/&#34;.">    at Object.Amazon Test (C:\Users\Jon\Desktop\angular-seed\nightwatch-tests\amazon-test.js:11:21)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
 
     
     </testcase>

@@ -34,6 +34,7 @@ var ENVIRONMENTS = {
 
 module.exports = {
     src_folders: ['nightwatch-tests'],
+    page_objects_parth: 'nightwatch-tests/amazon-test.page',
     selenium: SELENIUM_CONFIGURATION,
     test_settings: ENVIRONMENTS
 };
