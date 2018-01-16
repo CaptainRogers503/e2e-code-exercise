@@ -1,4 +1,52 @@
-# `angular-seed` — the seed for AngularJS apps
+#NOTE:
+For the purposes of this code exercise - I started with an Angular "seed project" from github.
+The majority of this README can be ignored.  The necessary instructions for running the NightwatchJS tests
+will be included in this first section:
+
+## Getting Started
+First, run npm install in bash:
+
+```
+npm install
+```
+
+Next, do an npm install of the selenium-standalone server:
+
+```
+npm install -g selenium-standalone
+```
+
+finally, install selenium-standalone:
+
+```
+selenium-standalone install
+```
+
+
+## Running Nightwatch Tests
+
+To run the NightwatchJS tests, you will need two bash windows open: one for running the standalone server,
+and the other for executing the tests.
+
+### To run Selenium Standalone Server:
+
+```
+selenium-standalone start
+```
+
+### To Run Nightwatch Tests
+
+```
+./node_modules/.bin/nightwatch
+```
+
+
+
+# End instructions for running the Nightwatch Amazon test
+
+
+
+## `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
 to quickly bootstrap your angular webapp projects and dev environment for these projects.
@@ -76,70 +124,10 @@ npm start
 Now browse to the app at [`localhost:8000/index.html`][local-app-url].
 
 
-## Directory Layout
 
-```
-app/                    --> all of the source files for the application
-  app.css               --> default stylesheet
-  components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
-  app.js                --> main application module
-  index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
-karma.conf.js         --> config file for running unit tests with Karma
-e2e-tests/            --> end-to-end tests
-  protractor-conf.js    --> Protractor config file
-  scenarios.js          --> end-to-end scenarios to be run by Protractor
-```
 
 
 ## Testing
-
-There are two kinds of tests in the `angular-seed` application: Unit tests and end-to-end tests.
-
-### Running Unit Tests
-
-The `angular-seed` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
-which we run with the [Karma][karma] test runner. We provide a Karma configuration file to run them.
-
-* The configuration is found at `karma.conf.js`.
-* The unit tests are found next to the code they are testing and have an `_test.js` suffix (e.g.
-  `view1_test.js`).
-
-The easiest way to run the unit tests is to use the supplied npm script:
-
-```
-npm test
-```
-
-This script will start the Karma test runner to execute the unit tests. Moreover, Karma will start
-watching the source and test files for changes and then re-run the tests whenever any of them
-changes.
-This is the recommended strategy; if your unit tests are being run every time you save a file then
-you receive instant feedback on any changes that break the expected code functionality.
-
-You can also ask Karma to do a single run of the tests and then exit. This is useful if you want to
-check that a particular version of the code is operating as expected. The project contains a
-predefined script to do this:
-
-```
-npm run test-single-run
-```
-
 
 <a name="e2e-testing"></a>
 ### Running End-to-End Tests
@@ -170,12 +158,6 @@ you can run:
 npm run update-webdriver
 ```
 
-Once you have ensured that the development web server hosting our application is up and running, you
-can run the end-to-end tests using the supplied npm script:
-
-```
-npm run protractor
-```
 
 This script will execute the end-to-end tests against the application being hosted on the
 development server.
