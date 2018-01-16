@@ -4,23 +4,27 @@
 //var driver = new webdriver.Builder().build();
 const {Builder, By, Key, until} = require('selenium-webdriver');  //added for bottom test trying to add driver variable
 
-// module.exports = {  //currently working
-//     'Amazon Test': function (browser) {
-//
-//         browser
-//             .url('https://www.amazon.com/')
-//             .assert.urlEquals('https://www.amazon.com/')
-//             .waitForElementVisible('#twotabsearchtextbox', 2000)
-//             .click('#twotabsearchtextbox')
-//             .setValue('#twotabsearchtextbox', 'nike shoes')
-//             .click('.nav-search-submit > input.nav-input')
-//             .pause(3000)
-//             .getText(' span > .sx-price-large', function(result) {  //gets first value - need to get all values
-//                 console.log(result);
-//             })
-//             .end();
-//     }
-// };
+ module.exports = {  //currently working
+     'Amazon Test': function (browser) {
+
+         browser
+             .url('https://www.amazon.com/')
+             .assert.urlEquals('https://www.amazon.com/')
+             .waitForElementVisible('#twotabsearchtextbox', 2000)
+             .click('#twotabsearchtextbox')
+             .setValue('#twotabsearchtextbox', 'nike shoes')
+             .click('.nav-search-submit > input.nav-input')
+             .pause(1000)
+             //.getText(' span > .sx-price-large', function(result) {  //gets first value - need to get all values
+             //    console.log(result);
+             //})
+             .click('#sort')
+             .click('option[value=price-asc-rank]')
+             .pause(2000)
+
+             .end();
+     }
+ };
 
 //module.exports = {
 //    'Amazon Test': (client) => {
@@ -83,33 +87,33 @@ const {Builder, By, Key, until} = require('selenium-webdriver');  //added for bo
 //     }
 // };
 
-module.exports = {  //currently working
-    'Amazon Test': function (browser) {
-
-        var shoePrices = [[]];
-        browser
-            .url(' https://www.amazon.com/')
-            .waitForElementVisible('#twotabsearchtextbox', 1000)
-            .click('#twotabsearchtextbox')
-            .setValue('#twotabsearchtextbox', 'nike shoes')
-            .click('.nav-search-submit > input.nav-input')
-            .pause(1000)
-            .elements('class name', 'sx-price-large', function (response) {
-                response.value.forEach(function (element) {
-                    browser.elementIdText(element.ELEMENT, function (text) {
-                        var price = [element.ELEMENT, text.value.substring(text.value.indexOf("$") + 2, text.value.length).replace(' ', '.')];
-                        shoePrices.push(price);
-                        if (element === response.value[response.value.length - 1]) {
-                            shoePrices.sort(function sortNumber(a, b) {
-                                return a[1] - b[1];
-                            });
-                            console.log(shoePrices)
-                        }
-                    });
-                });
-            })
-            .end();
-    }
-};
+//module.exports = {  //currently working
+//    'Amazon Test': function (browser) {
+//
+//        var shoePrices = [[]];
+//        browser
+//            .url(' https://www.amazon.com/')
+//            .waitForElementVisible('#twotabsearchtextbox', 1000)
+//            .click('#twotabsearchtextbox')
+//            .setValue('#twotabsearchtextbox', 'nike shoes')
+//            .click('.nav-search-submit > input.nav-input')
+//            .pause(1000)
+//            .elements('class name', 'sx-price-large', function (response) {
+//                response.value.forEach(function (element) {
+//                    browser.elementIdText(element.ELEMENT, function (text) {
+//                        var price = [element.ELEMENT, text.value.substring(text.value.indexOf("$") + 2, text.value.length).replace(' ', '.')];
+//                        shoePrices.push(price);
+//                        if (element === response.value[response.value.length - 1]) {
+//                            shoePrices.sort(function sortNumber(a, b) {
+//                                return a[1] - b[1];
+//                            });
+//                            console.log(shoePrices)
+//                        }
+//                    });
+//                });
+//            })
+//            .end();
+//    }
+//};
 
 
