@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="amazon-test"
-    errors="0" failures="0" hostname="" id="" package="amazon-test" skipped="0"
-    tests="1" time="19.56" timestamp="Tue, 16 Jan 2018 02:34:26 GMT">
+    errors="0" failures="1" hostname="" id="" package="amazon-test" skipped="0"
+    tests="1" time="24.97" timestamp="Tue, 16 Jan 2018 04:28:12 GMT">
   
-    <testcase name="Amazon Test" classname="amazon-test" time="19.56" assertions="2">
+    <testcase name="Amazon Test" classname="amazon-test" time="24.97" assertions="3">
 
     
+
+      <failure message="Failed [deepEqual]: (Asserting the value is less than 100)">    at Object.&lt;anonymous&gt; (C:\Users\Jon\Desktop\angular-seed\nightwatch-tests\amazon-test.js:57:32)</failure>
 
     
     </testcase>

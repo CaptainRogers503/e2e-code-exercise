@@ -5,15 +5,15 @@
 
   <testsuite name="amazon-page.amazon-test.page"
     errors="0" failures="0" hostname="" id="" package="amazon-page" skipped="0"
-    tests="0" time="0.000" timestamp="Tue, 16 Jan 2018 02:30:56 GMT">
+    tests="0" time="0.000" timestamp="Tue, 16 Jan 2018 04:21:35 GMT">
   
 
   
     <system-err>
         Error while running [Amazon Test / Amazon Test]:
 
-  TypeError: browser.selectByValue is not a function
-    at Object.Amazon Test (C:\Users\Jon\Desktop\angular-seed\nightwatch-tests\amazon-test.js:22:22)
+  TypeError: browser.url(...).assert.urlEquals(...).waitForElementVisible(...).click(...).setValue(...).click(...).pause(...).click(...).click(...).pause(...).click(...).pause(...).getText(...).assert is not a function
+    at Object.Amazon Test (C:\Users\Jon\Desktop\angular-seed\nightwatch-tests\amazon-test.js:29:15)
     at Module.call (C:\Users\Jon\Desktop\angular-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\Jon\Desktop\angular-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\Jon\Desktop\angular-seed\node_modules\q\q.js:834:54)

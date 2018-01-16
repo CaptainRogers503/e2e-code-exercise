@@ -4,27 +4,57 @@
 //var driver = new webdriver.Builder().build();
 const {Builder, By, Key, until} = require('selenium-webdriver');  //added for bottom test trying to add driver variable
 
- module.exports = {  //currently working
-     'Amazon Test': function (browser) {
+ //module.exports = {  //currently working
+ //    'Amazon Test': function (browser) {
+ //
+ //        var price = '';
+ //        browser
+ //            .url('https://www.amazon.com/')
+ //            .assert.urlEquals('https://www.amazon.com/')
+ //            .waitForElementVisible('#twotabsearchtextbox', 2000)
+ //            .click('#twotabsearchtextbox')
+ //            .setValue('#twotabsearchtextbox', 'nike shoes')
+ //            .click('.nav-search-submit > input.nav-input')
+ //            .pause(1000)
+ //            .click('#sort')
+ //            .click('option[value=price-asc-rank]')
+ //            .pause(2000)
+ //            .click('#result_0')
+ //            .pause(2000)
+ //            .getText('#priceblock_ourprice', function(result) {
+ //                price = result.value.substring(1, 6);
+ //                console.log('price is ', price);
+ //                browser.assert(price < 100, true, "asset value is less than 100");
+ //            })
+ //            .assert(price).toEqual(100)
+ //            .end();
+ //    }
+ //};
 
-         browser
-             .url('https://www.amazon.com/')
-             .assert.urlEquals('https://www.amazon.com/')
-             .waitForElementVisible('#twotabsearchtextbox', 2000)
-             .click('#twotabsearchtextbox')
-             .setValue('#twotabsearchtextbox', 'nike shoes')
-             .click('.nav-search-submit > input.nav-input')
-             .pause(1000)
-             //.getText(' span > .sx-price-large', function(result) {  //gets first value - need to get all values
-             //    console.log(result);
-             //})
-             .click('#sort')
-             .click('option[value=price-asc-rank]')
-             .pause(2000)
-
-             .end();
-     }
- };
+module.exports = { //currently working
+    'Amazon Test' : function (browser) {
+        var price = '';
+        browser
+            .url('https://www.amazon.com/' )
+            .assert.urlEquals( 'https://www.amazon.com/' )
+            .waitForElementVisible( '#twotabsearchtextbox' , 2000 )
+            .click( '#twotabsearchtextbox' )
+            .setValue( '#twotabsearchtextbox', 'nike shoes' )
+            .click('.nav-search-submit > input.nav-input' )
+            .pause(1000)
+            .click('#sort')
+            .click('option[value=price-asc-rank]')
+            .pause(2000)
+            .click('#result_0')
+            .pause(2000)
+            .getText('#priceblock_ourprice', function(result) {
+                price = result.value.substring(1 ,6);
+                console.log('price is ', price);
+                browser.assert.deepEqual(price < 100, true, "Asserting the value is less than 100")
+                browser.end() ;
+            })
+    }
+};
 
 //module.exports = {
 //    'Amazon Test': (client) => {
