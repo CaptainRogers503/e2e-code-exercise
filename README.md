@@ -1,4 +1,4 @@
-#NOTE:
+# NOTE:
 For the purposes of this code exercise - I started with an Angular "seed project" from github.
 The majority of this README can be ignored.  The necessary instructions for running the NightwatchJS tests
 will be included in this first section:
